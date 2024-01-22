@@ -45,7 +45,7 @@ public class BookDAO extends DataAccessObject<Book> {
             "FROM books WHERE title LIKE ?";
 
     private static final String GET_TEST =
-            "SELECT id, title, first_name, last_name, MAX(pages) " +
+            "SELECT id, title, first_name, last_name, MAX(pages) AS pages " +
             "FROM books";
 
     public BookDAO(Connection connection) {
